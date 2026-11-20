@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>FocusFlow - AI Productivity App</title>
+</head>
+
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">FocusFlow</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <button class="nav-btn active" data-section="dashboard"><span class="nav-icon">🏠</span> Dashboard
+                </button>
+            </li>
+            <li>
+                <button class="nav-btn" data-section="tasks"><span class="nav-icon">✅</span> Tasks</button>
+            </li>
+            <li>
+                <button class="nav-btn" data-section="habits"><span class="nav-icon">🔥</span> Habits</button>
+            </li>
+            <li>
+                <button class="nav-btn" data-section="timer"><span class="nav-icon">🕒</span> Focus Timer</button>
+            </li>
+            <li>
+                <button class="nav-btn" data-section="journal"><span class="nav-icon">📓</span> AI Journal</button>
+            </li>
+            <li>
+                <button class="nav-btn" data-section="stats"><span class="nav-icon">📊</span> Stats</button>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <button class="theme-toggle" id="themeToggle"> 🌙 Dark Mode</button>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="topbar">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <span class="topbar-title">FocusFlow</span>
+        </div>
+        <!--Dashbord-->
+        <section class="section active" id="dashboard">
+            <div class="section-header">
+                <h1 id="greeting">Good morning 👋!</h1>
+                <p class="subtitle">Here's what AI thinks of your day</p>
+            </div>
+        </section>
+        <!--Tasks-->
+        <section class="section" id="tasks">
+            <div class="section-header">
+                <h1>Tasks</h1>
+                <p class="subtitle">AI will help you prioritise what matters most</p>
+            </div>
+        </section>
+        <!--Habits-->
+        <section class="section" id="habits">
+            <div class="section-header">
+                <h1>Habits</h1>
+                <p class="subtitle">Small actions, tracked daily</p>
+            </div>
+        </section>
+        <!-- Focus Timer -->
+        <section class="section" id="timer">
+            <div class="section-header">
+                <h1>Focus Timer</h1>
+                <p class="subtitle">25-minute Pomodoro sessions</p>
+            </div>
+        </section>
+        <!-- AI Journal -->
+        <section class="section" id="journal">
+            <div class="section-header">
+                <h1>AI Journal</h1>
+                <p class="subtitle">Reflect, plan, and grow — with a little AI help</p>
+            </div>
+        </section>
+        <!-- Stats -->
+        <section class="section" id="stats">
+            <div class="section-header">
+                <h1>Your Stats</h1>
+                <p class="subtitle">Productivity at a glance</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

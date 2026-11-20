@@ -1,0 +1,132 @@
+/* ── DESIGN TOKENS — pre-written, do not change ──────────── */
+:root {
+  /* Brand colours */
+  --color-primary:      #059C02;   /* Green — main accent */
+  --color-primary-soft: #E6F9E6;   /* Green tint */
+  --color-teal:         #0891B2;   /* Blue-green — AI accent */
+  --color-teal-soft:    #E0F7FB;   /* Blue-green tint */
+  --color-amber:        #F59E0B;   /* Amber — warnings */
+  --color-red:          #EF4444;   /* Red — high priority */
+  --color-green:        #22C55E;   /* Green — success */
+
+  /* Neutral palette */
+  --color-bg:           #F4FBF4;   /* Page background */
+  --color-surface:      #FFFFFF;   /* Card background */
+  --color-sidebar:      #052E16;   /* Sidebar */
+  --color-sidebar-text: #86EFAC;   /* Sidebar secondary text */
+  --color-border:       #E5E7EB;
+  --color-text:         #052E16;
+  --color-muted:        #6B7280;
+
+  /* Typography */
+  --font-main:   'Segoe UI', system-ui, sans-serif;
+  --text-xs:     0.75rem;
+  --text-sm:     0.875rem;
+  --text-base:   1rem;
+  --text-lg:     1.125rem;
+  --text-xl:     1.25rem;
+  --text-2xl:    1.5rem;
+  --text-3xl:    1.875rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Radius & shadow */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+
+  /* Sidebar width */
+  --sidebar-width: 220px;
+}
+
+/* LESSON 1 — Reset and base body */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: var(--text-base);
+    color: var(--color-text);
+    background: var(--color-bg);
+    display: flex;
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+}
+
+input, select, textarea {
+    font-family: inherit;
+}
+
+/* LESSON 1 — Sidebar */
+
+.sidebar {
+    width: var(--sidebar-width);
+    background: var(--color-sidebar);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.nav-btn:active {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.main-content {
+    margin-left: var(--sidebar-width);
+}
+
+
+/* LESSON 2 — Nav links and active states */
+
+
+/* LESSON 3 — Main content area and sections */
+
+
+/* LESSON 4 — Card component */
+
+
+/* LESSON 5 — Stats grid */
+
+
+/* LESSON 6 — Input group and buttons */
+
+
+/* LESSON 7 — Task list */
+
+
+/* LESSON 8 — Habit list and streak badge */
+
+
+/* LESSON 9 — AI card */
+
+
+/* LESSON 10 — Dark mode + responsive */
